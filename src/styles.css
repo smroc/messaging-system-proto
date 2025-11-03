@@ -18,7 +18,7 @@ body {
 
 .chat-card {
   width: 100%;
-  max-width: 420px;
+  max-width: 100%;
   min-height: 620px;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px);
