@@ -1,0 +1,132 @@
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #edf1ff 0%, #f8f9ff 100%);
+  color: #1f2d3d;
+}
+
+body {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(97, 142, 255, 0.35), transparent 60%),
+    radial-gradient(circle at bottom, rgba(130, 215, 247, 0.25), transparent 55%);
+  padding: 2rem 1rem;
+}
+
+.chat-card {
+  width: 100%;
+  max-width: 420px;
+  min-height: 620px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 28px !important;
+}
+
+.avatar-lg {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #28c76f;
+}
+
+.message-list {
+  background: linear-gradient(160deg, rgba(163, 185, 255, 0.12), rgba(255, 255, 255, 0));
+}
+
+.message-bubble {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 24px;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-bubble.bg-white {
+  border-color: rgba(143, 162, 196, 0.35) !important;
+}
+
+.message-bubble.bg-gradient-primary {
+  background: linear-gradient(135deg, #3a7bff 0%, #6f9cff 100%);
+}
+
+.message-bubble:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(41, 98, 255, 0.12);
+}
+
+.message-time {
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 1.75rem;
+}
+
+.rounded-xl {
+  border-radius: 2.5rem;
+}
+
+.last-seen {
+  letter-spacing: 0.02em;
+}
+
+textarea.form-control {
+  resize: none;
+  box-shadow: none !important;
+}
+
+textarea.form-control:focus {
+  border-color: #8ba6ff;
+  box-shadow: 0 0 0 0.2rem rgba(107, 144, 255, 0.2) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f8bff 0%, #7aa9ff 100%);
+  border-color: transparent;
+  box-shadow: 0 10px 25px rgba(77, 128, 255, 0.35);
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  background: linear-gradient(135deg, #3c7cfd 0%, #5e92ff 100%);
+  border-color: transparent;
+  box-shadow: 0 12px 30px rgba(71, 124, 255, 0.45);
+}
+
+.btn-outline-primary {
+  color: #4f7bff;
+  border-color: rgba(76, 117, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.btn-outline-primary:disabled,
+.btn-primary:disabled {
+  opacity: 0.65;
+  box-shadow: none;
+}
+
+@media (max-width: 575.98px) {
+  .chat-card {
+    min-height: 100vh;
+    border-radius: 0 !important;
+    max-width: 100%;
+  }
+
+  .app-shell {
+    padding: 0;
+  }
+}
