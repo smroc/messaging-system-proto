@@ -23,7 +23,7 @@ function MessageComposer({ onSend, isSending, disabled }) {
         </div>
         <textarea
           className="form-control border-left-0 rounded-lg"
-          rows="3"
+          rows="1"
           placeholder="Send a respectful, iMessage-worthy note…"
           value={text}
           onChange={(event) => setText(event.target.value)}

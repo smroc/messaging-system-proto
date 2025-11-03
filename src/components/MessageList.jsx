@@ -25,10 +25,10 @@ function MessageList({ messages, isLoading }) {
             className={`d-flex mb-3 ${message.sender === 'me' ? 'justify-content-end' : 'justify-content-start'}`}
           >
             <div
-              className={`message-bubble ${
+              className={`message-bubble shadow-sm ${
                 message.sender === 'me'
-                  ? 'message-bubble--me align-self-end'
-                  : 'message-bubble--contact'
+                  ? 'bg-gradient-primary text-white align-self-end'
+                  : 'bg-white text-dark border'
               }`}
             >
               <p className="mb-1">{message.text}</p>

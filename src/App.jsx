@@ -49,8 +49,8 @@ function App() {
   }, [messages, contact]);
 
   return (
-    <div className="app-shell d-flex flex-column">
-      <div className="chat-card d-flex flex-column flex-grow-1 shadow-lg border-0 overflow-hidden">
+    <div className="app-shell d-flex align-items-center justify-content-center py-4 py-md-5">
+      <div className="chat-card d-flex flex-column shadow-lg rounded-xl border-0 overflow-hidden">
         {contact ? (
           <ConversationHeader
             contact={contact}
